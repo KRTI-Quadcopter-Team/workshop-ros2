@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'vision_package'
+package_name = 'simulation_packages'
 
 setup(
     name=package_name,
@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "vision_proccess = vision_package.vision_proc:main"
+            "gui_status = simulation_packages.gui_status:main",
+            "mavros_sim = simulation_packages.mavros_sim:main"
         ],
     },
 )
