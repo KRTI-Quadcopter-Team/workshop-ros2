@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'driver_packages'
+package_name = 'vision_package'
 
 setup(
     name=package_name,
@@ -20,9 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "camera_driver = driver_packages.cam_driver_pub:main",
-            "sensor_driver = driver_packages.sensor_driver_pub:main",
-            "grip_driver = driver_packages.grip_driver_srv_pub:main"
+            "vision_proccess = vision_package.vision_proc:main"
         ],
     },
 )

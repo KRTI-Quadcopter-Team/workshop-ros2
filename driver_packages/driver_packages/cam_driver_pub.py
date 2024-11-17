@@ -8,7 +8,7 @@ import cv2
 class CamDriverPub(Node):
     def __init__(self):
         super().__init__('Camera Driver')
-        self.publisher = self.create_publisher(Image, 'image_raw', 10)
+        self.publisher = self.create_publisher(Image, '/image_raw', 10)
         timer_period = 0.5
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.cap = cv2.VideCapture(0)

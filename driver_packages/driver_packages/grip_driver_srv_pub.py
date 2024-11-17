@@ -7,7 +7,7 @@ from custom_interface.srv import Grip
 class GripDriver(Node):
     def __init__(self):
         super().__init__('Grip Driver')
-        self.publisher = self.create_publisher(Bool, "status_pwr", 10)
+        self.publisher = self.create_publisher(Bool, "/status_pwr", 10)
         self.servis = self.create_service(Grip, "grip_power", self.servis_callback)
         timer_period = 0.5
         self.timer = self.create_timer(timer_period, self.timer_callback)
