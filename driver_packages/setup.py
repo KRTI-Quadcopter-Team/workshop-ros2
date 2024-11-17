@@ -14,7 +14,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='aftazani',
-    maintainer_email='aftazani@todo.todo',
+    maintainer_email='taftazani17@gmail.com',
     description='TODO: Package description',
     license='MIT',
     tests_require=['pytest'],
