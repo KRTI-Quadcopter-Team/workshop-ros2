@@ -1,0 +1,29 @@
+launch:
+- include:
+    file: '$(find-pkg-share driver_packages)/launch/start_driver.launch.xml'
+
+- node:
+    pkg: "vision_packages"
+    exec: "vision_process"
+    name: "vision_process"
+  
+- node:
+    pkg: "gnc_packages"
+    exec: "avoidence_process"
+    name: "avoidence_process"
+
+- node:
+    pkg: "gnc_packages"
+    exec: "navigation_process"
+    name: "navigation_process"
+
+- node: 
+    pkg: "simulation_packages"
+    exec: "mavros_sim"
+    name: "mavros_sim"
+
+- node:
+    pkg: "simulation_packages"
+    exec: "gui_status"
+    name: "gui_status"
+  

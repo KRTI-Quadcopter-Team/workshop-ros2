@@ -1,0 +1,7 @@
+<launch>
+    <!-- <group namespace="driver"> -->
+        <node pkg="driver_packages" exec="camera_driver" name="camera_driver" />
+        <node pkg="driver_packages" exec="sensor_driver" name="sensor_driver" />
+        <node pkg="driver_packages" exec="grip_driver" name="grip_driver" />
+    <!-- </group> # cant do this in ros2-->
+</launch>

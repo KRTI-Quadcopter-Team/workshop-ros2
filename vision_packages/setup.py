@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "vision_process = vision_packages.vision_proc:main"
         ],
     },
 )

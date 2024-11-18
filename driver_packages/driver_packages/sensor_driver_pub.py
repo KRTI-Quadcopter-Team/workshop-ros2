@@ -5,7 +5,7 @@ from custom_interface.msg import SensorData
 
 class SensorDataDriver(Node):
     def __init__(self):
-        super().__init__('Sensor Driver')
+        super().__init__('Sensor_Driver')
         self.publisher = self.create_publisher(SensorData, "/sensor_data", 10)
         timer_period = 0.5
         self.timer = self.create_timer(timer_period, self.timer_callback)
