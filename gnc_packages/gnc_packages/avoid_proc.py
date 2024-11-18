@@ -5,7 +5,7 @@ from custom_interface.msg import NaviVel, SensorData
 
 class AvoidenceProcess(Node):
     def __init__(self):
-        super().__init__('Avoid Process')
+        super().__init__('Avoid_Process')
         self.publisher = self.create_publisher(NaviVel, "/cmd_vel", 10)
         self.subscriber = self.create_subscription(SensorData, "/sensor_data", self.sensor_cb, 10)
         timer_period = 0.5

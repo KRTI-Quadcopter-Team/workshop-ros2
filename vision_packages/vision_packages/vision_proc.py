@@ -9,7 +9,7 @@ import numpy as np
 
 class VisionProcess(Node):
     def __init__(self):
-        super().__init__('Vision Process')
+        super().__init__('Vision_Process')
         self.subscriber = self.create_subscription(Image, "/image_raw", self.image_cb, 10)
         self.publisher_img = self.create_publisher(Image, "/detected_image", 10)
         self.publisher_nav = self.create_publisher(NaviVel, "/cmd_vel", 10)

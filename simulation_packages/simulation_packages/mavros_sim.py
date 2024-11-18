@@ -5,7 +5,7 @@ from std_msgs.msg import String
 
 class MavrosSimulation(Node):
     def __init__(self):
-        super().__init__('Mavros Simulation')
+        super().__init__('Mavros_Simulation')
         self.subscriber = self.create_subscription(String, "/telem_msg", self.telem_cb, 10)
     
     def telem_cb(self, msg):

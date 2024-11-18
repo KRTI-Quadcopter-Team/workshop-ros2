@@ -7,11 +7,16 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(driver_packages REQUIRED)
-find_package(custom_interface REQUIRED)
-find_package(gnc_packages REQUIRED)
-find_package(simulation_packages REQUIRED)
-find_package(vision_packages REQUIRED)
+# find_package(driver_packages REQUIRED)
+# find_package(custom_interface REQUIRED)
+# find_package(gnc_packages REQUIRED)
+# find_package(simulation_packages REQUIRED)
+# find_package(vision_packages REQUIRED)
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

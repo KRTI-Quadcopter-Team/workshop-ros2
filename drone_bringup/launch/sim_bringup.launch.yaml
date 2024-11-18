@@ -1,6 +1,6 @@
 launch:
 - include:
-    file: '$(find-pkg-share driver_packages)/launch/start_driver.launch.xml'
+    file: '$(find-pkg-share driver_packages)/start_driver.launch.xml'
 
 - node:
     pkg: "vision_packages"

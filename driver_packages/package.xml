@@ -16,7 +16,7 @@
   <depend>costum_interface</depend>
 
   <exec_depend>ros2launch</exec_depend>
-  <exec_depend>driver_packages</exec_depend>
+  <!-- <exec_depend>driver_packages</exec_depend> -->
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

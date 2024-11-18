@@ -6,7 +6,7 @@ from std_msgs.msg import String
 
 class NavigationProcess(Node):
     def __init__(self):
-        super().__init__('Navugation Process')
+        super().__init__('Navugation_Process')
         self.subscriber = self.create_subscription(NaviVel, "/cmd_vel", self.navi_cb, 10)
         self.publisher = self.create_publisher(String, "/telem_msg", 10)
         timer_period = 0.3

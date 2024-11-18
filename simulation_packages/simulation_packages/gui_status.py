@@ -7,7 +7,7 @@ from std_msgs.msg import Bool
 
 class GUIStatus(Node):
     def __init__(self):
-        super().__init__('GUI Status')
+        super().__init__('GUI_Status')
         self.subscriber_img = self.create_subscription(Image, "/detected_img", self.image_cb, 10)
         self.subscriber_vel = self.create_subscription(NaviVel, "/cmd_vel", self.navi_cb, 10)
         self.subscriber_sensor = self.create_subscription(SensorData, "/sensor_data", self.sensor_cb, 10)
