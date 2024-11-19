@@ -2,7 +2,7 @@
 Repository ini digunakan untuk template packages ros2 drone programming di workshop Quadcopter Robotiik 2024. Harap gunakan repository ini untuk pembelajaran dan kembangkan dari waktu ke waktu. Kami tim Quadcopter Robotiik berharap besar pada kalian penerus tim. Have a nice day.😊
 
 ## Node Graph
-![Node Graph now version](https://github.com/Robotiik-Quadcopter-Team/workshop-ros2/blob/main/node_graph_v1.jpg?raw=true)
+![Node Graph now version](https://github.com/Robotiik-Quadcopter-Team/workshop-ros2/blob/main/img/node_graph_v1.jpg?raw=true)
 
 ## Installation
 Pertama kalian harus menginstall lengkap Ubuntu 22 dan [ROS2](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
