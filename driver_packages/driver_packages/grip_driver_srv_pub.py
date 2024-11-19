@@ -21,6 +21,7 @@ class GripDriver(Node):
     def timer_callback(self):
         msg = Bool()
         msg.data = self.power_on
+        self.publisher.publish(msg)
         
 
 def main(args=None):
