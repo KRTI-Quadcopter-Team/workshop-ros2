@@ -17,6 +17,7 @@ class GripDriver(Node):
         self.power_on = req.power
         res.status = self.power_on
         self.get_logger().info(f"Grip Power changed to: {self.power_on}")
+        return res
 
     def timer_callback(self):
         msg = Bool()
