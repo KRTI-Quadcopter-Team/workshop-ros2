@@ -25,5 +25,11 @@ Untuk menjalankan seluruh node yang diperlukan cukup jalankan launch file di pac
 ```
 $ ros2 launch drone_bringup sim_bringup.launch.yaml
 ```
+Mengakses Web ui dapat dilakukan secara manual dengan menjalankan server http dan membuka situs di browser
+```
+$ cd ~/your_ws/src/simulation_packages/web
+$ python server.py
+# open your browser to http://127.0.0.1:5050
+```
 ## Note
 Repository ini akan selalu diupdate selama workshop ini. Diharapkan para anggota dapat berkontribusi untuk mengupdate sesuai dengan kebutuhan yang akan datang.
